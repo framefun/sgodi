@@ -35,9 +35,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <body>
 <style media="screen">
-  .logo img{
-    filter
-  }
+
 </style>
     <!-- mian-content -->
     <div class="banner-content" id="home">
@@ -177,7 +175,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <div class="bottom-gd fea">
                                         <span class="fa fa-camera-retro" aria-hidden="true"></span>
                                         <h3 class="my-3">Artists</h3>
-                                        <p class="px-lg-3">Those who dare to think beyond the confines of society...</p>
+                                        <p class="px-lg-3">Those who dare to think beyond societal confines...</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -242,15 +240,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <div class="login p-md-5 p-4 mx-auto bg-white mw-100 col-lg-5">
                     <h5 class="text-center mb-4">Apply Now</h5>
-                    <form action="#" method="post">
+                    <form action="apply.php" method="post">
                         <div class="form-group">
                             <label>Student's Full Names</label>
 
-                            <input type="text" class="form-control" id="validationDefault01" placeholder="example: Rotondwa Mulaudzi" required="">
+                            <input name="student_name" type="text" class="form-control" id="validationDefault01" placeholder="example: Rotondwa Mulaudzi" required="">
                         </div>
                         <div class="form-group">
                             <label>Email address</label>
-                            <input type="email" class="form-control" id="validationDefault02" placeholder="example: rotondwa@gmail.com" required="">
+                            <input name="student_email" type="email" class="form-control" id="validationDefault02" placeholder="example: rotondwa@gmail.com" required="">
                         </div>
                         <div class="form-group">
                             <label>Grade being applied for</label>
@@ -265,10 +263,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                         <div class="form-group mb-4">
                             <label class="mb-2">Password</label>
-                            <input type="password" class="form-control" id="password1" placeholder="" required="">
+                            <input name="pass"  type="password" class="form-control" id="password1" placeholder="" required="">
                         </div>
 
-                        <button type="submit" class="btn btn-primary submit mb-4">Register</button>
+                        <button name="btnreg" type="submit" class="btn btn-primary submit mb-4">Register</button>
 
                     </form>
 
@@ -284,30 +282,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="inner-sec-w3ls py-lg-5 py-4">
                 <h3 class="tittle text-center my-lg-5 my-3"><span class="sub-tittle">The leading Team</span> Our Administration</h3>
                 <div class="row mt-lg-5 mt-4">
+                  <div class="col-md-4 team-gd second text-center">
+                      <div class="team-img mb-4">
+                          <img src="images/team1.jpg" class="img-fluid rounded-circle" alt="user-image">
+                      </div>
+                      <div class="team-info">
+                          <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Principal</span> Mariana Zungu</h3>
+                          <p>Pulled the school through multiple crises including the Covid pandemic.</p>
+                          <ul class="social_section_1info mt-md-4 mt-3">
+                              <li class="mb-2 google"><a href="#"><span class="fa fa-google-plus mr-1"></span>google</a></li>
+                              <li class="mb-2 linkedin"><a href="#"><span class="fa fa-linkedin mr-1"></span>linkedin</a></li>
+                          </ul>
+                      </div>
+                  </div>
                     <div class="col-md-4 team-gd text-center">
                         <div class="team-img mb-4">
                             <img src="images/team.jpg" class="img-fluid rounded-circle" alt="user-image">
                         </div>
                         <div class="team-info">
-                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Deputy Head</span>Londani Sebata</h3>
+                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Deputy Principal</span>Londani Sebata</h3>
                             <p>Has served Sgodiphola Secondary School for 12 years with notale achievements </p>
                             <ul class="social_section_1info mt-md-4 mt-3">
                                 <li class="mb-2 facebook"><a href="#"><span class="fa fa-facebook mr-1"></span>facebook</a></li>
                                 <li class="mb-2 twitter"><a href="#"><span class="fa fa-twitter mr-1"></span>twitter</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 team-gd second text-center">
-                        <div class="team-img mb-4">
-                            <img src="images/team1.jpg" class="img-fluid rounded-circle" alt="user-image">
-                        </div>
-                        <div class="team-info">
-                            <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">School Head</span> Mariana Zungu</h3>
-                            <p>Pulled the school through multiple crises including the Covid pandemic.</p>
-                            <ul class="social_section_1info mt-md-4 mt-3">
-                                <li class="mb-2 google"><a href="#"><span class="fa fa-google-plus mr-1"></span>google</a></li>
-                                <li class="mb-2 linkedin"><a href="#"><span class="fa fa-linkedin mr-1"></span>linkedin</a></li>
                             </ul>
                         </div>
                     </div>
@@ -505,7 +502,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="col-lg-6 testimonials_grid">
                     <div class="bg-white rounded p-lg-5 p-3">
                         <p class="sub-test"><span class="fa fa-quote-left" aria-hidden="true"></span>
-                          They do things differently and it works. Studnts seem happy at Sgodiphola. They have a plan and everything. I love their teaching methods
+                          They do things differently and it works. Students seem happy at Sgodiphola. They have a plan and everything. I love their teaching methods
                         </p>
                         <div class="row mt-4">
                             <div class="col-3 testi-img-res">
@@ -521,7 +518,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="col-lg-6 testimonials_grid mt-lg-0 mt-4">
                     <div class="bg-white rounded p-lg-5 p-3">
                         <p class="sub-test"><span class="fa fa-quote-left" aria-hidden="true"></span>
-                          The school is serious when it comes to hardwork. They teach students to be more independant by having take charge in some of the school's projects.
+                          The school is serious when it comes to hardwork. They teach students to be more independant by having them take charge in some of the school's projects.
                         </p>
                         <div class="row mt-4">
                             <div class="col-3 testi-img-res">
